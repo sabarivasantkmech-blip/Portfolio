@@ -1,13 +1,13 @@
 # Engineering Graduate Portfolio
 
-A production-ready static portfolio for an engineering graduate. It includes project cards, skills, hobbies, gallery placeholders, article placeholders, dark theme support, and a modern responsive interface.
+A production-ready static portfolio for an engineering graduate. It includes project cards, skills, hobbies, gallery placeholders, article placeholders, dark theme support, and a fluid canvas hero.
 
 ## Structure
 
 - `index.html`: The single-page app shell, SEO metadata, navigation, and section layout.
 - `assets/css/styles.css`: All visual styles, responsive layout, light theme, and dark theme variables.
 - `assets/js/content.js`: Host-managed content for projects, hobbies, gallery slots, and articles.
-- `assets/js/app.js`: Rendering, filtering, theme persistence, navigation behavior, and reveal animation.
+- `assets/js/app.js`: Rendering, filtering, theme persistence, navigation behavior, reveal animation, and canvas background.
 - `database/schema.sql`: PostgreSQL/Supabase-ready schema for future hosted content management.
 - `database/seed.sql`: Optional starter database rows.
 - `deployment/site.config.json`: Production URL and deployment placeholders.
