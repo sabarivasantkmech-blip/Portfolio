@@ -1,0 +1,10 @@
+{
+  "productionUrl": "https://your-domain.example",
+  "databaseProvider": "postgresql-or-supabase",
+  "contentMode": "static-now-database-ready",
+  "notes": [
+    "Replace productionUrl after deploying to a real host.",
+    "Keep DATABASE_URL private on the server or hosting platform.",
+    "Do not expose database credentials in browser JavaScript."
+  ]
+}
