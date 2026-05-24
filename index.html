@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A vibrant portfolio for an engineering graduate with projects, technical skills, reading, photography, and videography."
+    />
+    <meta name="theme-color" content="#10131f" />
+    <meta property="og:title" content="Engineering Graduate Portfolio" />
+    <meta
+      property="og:description"
+      content="A production-ready portfolio for engineering projects, reading notes, photography, and videography."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Engineering Graduate Portfolio</title>
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        document.documentElement.dataset.theme =
+          savedTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <noscript>
+      <div class="noscript-banner">
+        JavaScript is disabled. Enable it to view project, gallery, and article cards.
+      </div>
+    </noscript>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top">
+          <span class="brand-mark">EG</span>
+          <span class="brand-copy">
+            <strong>Engineering Graduate</strong>
+            <small>Projects, ideas, and visual hobbies</small>
+          </span>
+        </a>
+
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span class="theme-toggle-text">Theme</span>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#articles">Articles</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        <section id="top" class="hero" data-reveal>
+          <div class="hero-content">
+            <p class="eyebrow">Engineering graduate portfolio</p>
+            <h1>Building practical systems with a creative eye.</h1>
+            <p class="hero-text">
+              A generic professional portfolio for a recent engineering graduate: technical
+              projects, problem-solving strengths, and the hobbies that shape a sharper point of
+              view.
+            </p>
+          </div>
+
+          <div class="hero-stats" aria-label="Portfolio highlights">
+            <span><strong>Projects</strong> Embedded ideas, web tools, data dashboards</span>
+            <span><strong>Mindset</strong> Curious, analytical, execution-focused</span>
+            <span><strong>Hobbies</strong> Reading, photography, videography</span>
+          </div>
+        </section>
+
+        <section class="marquee-band" data-reveal>
+          <p>Engineering / Software / Data / Reading / Photography / Videography / Learning</p>
+        </section>
+
+        <section id="projects" class="content-section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow">Recent projects</p>
+            <h2>Work that shows technical depth and initiative.</h2>
+            <p>
+              These sample cards are written for a general engineering graduate. Replace them with
+              final-year work, internships, hackathons, prototypes, or self-built tools.
+            </p>
+          </div>
+
+          <div id="project-grid" class="project-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="skills" class="content-section split-section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow">Core strengths</p>
+            <h2>Engineering thinking with clean communication.</h2>
+            <p>
+              The portfolio frames you as someone who can learn quickly, explain clearly, and ship
+              organized work across technical and creative contexts.
+            </p>
+          </div>
+
+          <div class="skill-board">
+            <article class="skill-card">
+              <span>01</span>
+              <h3>Problem Solving</h3>
+              <p>Breaking broad requirements into practical steps, prototypes, and measurable outcomes.</p>
+            </article>
+            <article class="skill-card">
+              <span>02</span>
+              <h3>Technical Projects</h3>
+              <p>Building dashboards, web apps, automation scripts, IoT concepts, and documented demos.</p>
+            </article>
+            <article class="skill-card">
+              <span>03</span>
+              <h3>Communication</h3>
+              <p>Writing project notes, presenting decisions, and turning complex work into simple stories.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="hobbies" class="content-section" data-reveal>
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow">Hobbies and perspective</p>
+              <h2>Curiosity outside the classroom.</h2>
+            </div>
+
+            <div class="filters" aria-label="Portfolio filters">
+              <button class="filter-button active" data-filter="all" type="button" aria-pressed="true">
+                All
+              </button>
+              <button class="filter-button" data-filter="Engineering" type="button" aria-pressed="false">
+                Engineering
+              </button>
+              <button class="filter-button" data-filter="Reading" type="button" aria-pressed="false">
+                Reading
+              </button>
+              <button class="filter-button" data-filter="Visual" type="button" aria-pressed="false">
+                Visual
+              </button>
+            </div>
+          </div>
+
+          <div id="journal-grid" class="journal-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="gallery" class="content-section" data-reveal>
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow">Gallery placeholders</p>
+              <h2>Visual proof for projects and hobbies.</h2>
+              <p>
+                Use these slots for screenshots, diagrams, photo walks, short video thumbnails, and
+                project demo images.
+              </p>
+            </div>
+          </div>
+
+          <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="content-section process-section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow">Portfolio story</p>
+            <h2>A concise profile for internships, jobs, and collaborations.</h2>
+          </div>
+
+          <div class="process-grid">
+            <article>
+              <strong>Learn</strong>
+              <p>Use reading and research to understand the problem before building a solution.</p>
+            </article>
+            <article>
+              <strong>Build</strong>
+              <p>Turn ideas into prototypes, testable workflows, and clearly documented projects.</p>
+            </article>
+            <article>
+              <strong>Present</strong>
+              <p>Use visuals, photos, and video to make technical work easier to understand.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="articles" class="content-section" data-reveal>
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow">Article placeholders</p>
+              <h2>Readable notes for projects, books, and learning.</h2>
+              <p>
+                These article cards are placeholders for the host to manage technical write-ups,
+                reading reflections, and creative process notes.
+              </p>
+            </div>
+          </div>
+
+          <div id="article-list" class="article-list" aria-live="polite"></div>
+        </section>
+
+        <section id="contact" class="content-section contact-section" data-reveal>
+          <div class="contact-copy">
+            <p class="eyebrow">Open to opportunities</p>
+            <h2>Ready for graduate roles, internships, and collaborative projects.</h2>
+            <p>
+              Update these links with your email, GitHub, LinkedIn, and creative profiles to make
+              the site ready for applications.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <a href="mailto:hello@yourportfolio.com">hello@yourportfolio.com</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Photography / Video</a>
+          </div>
+        </section>
+
+        <section id="privacy" class="content-section policy-section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow">Privacy and secure access</p>
+            <h2>Clear cookie policy and HTTPS-first deployment.</h2>
+            <p>
+              This portfolio is designed as a static site. It does not create a server-side user
+              session by default, and it only stores small browser preferences unless the host adds
+              analytics, contact forms, or login features later.
+            </p>
+          </div>
+
+          <div class="policy-grid">
+            <article class="policy-card">
+              <span>Cookie Policy</span>
+              <h3>Essential preferences only</h3>
+              <p>
+                The site stores theme preference and cookie notice acknowledgement in the browser.
+                No advertising cookies or analytics cookies are enabled in this template.
+              </p>
+            </article>
+            <article class="policy-card">
+              <span>User Session Policy</span>
+              <h3>No login session by default</h3>
+              <p>
+                If a future host adds accounts or forms, session cookies should be marked Secure,
+                HttpOnly, SameSite=Lax or Strict, and should expire after a reasonable time.
+              </p>
+            </article>
+            <article class="policy-card">
+              <span>HTTPS Certificates</span>
+              <h3>Configured at the host</h3>
+              <p>
+                TLS certificates must be issued through the hosting provider or server, then paired
+                with HTTPS redirects and HSTS headers for secure connections.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>
+          Copyright <span id="year"></span> Engineering Graduate Portfolio.
+          <a href="#privacy">Cookie and security policy</a>
+        </p>
+      </footer>
+    </div>
+
+    <div class="cookie-banner" data-cookie-banner role="region" aria-label="Cookie notice" hidden>
+      <p>
+        This site uses essential browser storage for theme preference and cookie notice
+        acknowledgement. No advertising or analytics cookies are enabled by default.
+      </p>
+      <div class="cookie-actions">
+        <a class="text-link" href="#privacy">Read policy</a>
+        <button class="button button-primary" type="button" data-cookie-accept>Accept</button>
+      </div>
+    </div>
+
+    <script src="assets/js/content.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
