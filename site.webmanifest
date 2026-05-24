@@ -1,0 +1,9 @@
+{
+  "name": "Engineering Graduate Portfolio",
+  "short_name": "Portfolio",
+  "description": "A portfolio for engineering projects, reading, photography, and videography.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f8ff",
+  "theme_color": "#10131f"
+}
